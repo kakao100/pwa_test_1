@@ -6,12 +6,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="manifest" href="manifest.json">
     <title>PWA Sample</title>
-  </head>
-  <body>
-    <div id="app">
-        <p>{{ message }}</p>
-        <button v-on:click="reverseMessage">Reverse Message</button>
-     </div>
     <script>
     // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
     if ('serviceWorker' in navigator) {
@@ -21,8 +15,11 @@
         console.log('ServiceWorker registration failed: ', err);
     });
     }
-    
     </script>
+  </head>
+  <body>
+
+
     <p>asdfasdfa</p>
   </body>
 </html>
