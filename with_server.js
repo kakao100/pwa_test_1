@@ -1,5 +1,4 @@
 <script>
-// ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 if ('serviceWorker' in navigator) {
 navigator.serviceWorker.register('service_worker.js').then(function(registration) {
     console.log('ServiceWorker registration successful with scope: ', registration.scope);
