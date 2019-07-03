@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+<<<<<<< HEAD
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +16,23 @@
   <script>
   // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
   if ('serviceWorker' in navigator) {
+=======
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="manifest" href="manifest.json">
+    <title>ポートフォーリオ</title>
+  </head>
+  <body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+     </div>
+    <script>
+    // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
+    if ('serviceWorker' in navigator) {
+>>>>>>> sub1
     navigator.serviceWorker.register('service_worker.js').then(function(registration) {
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }).catch(function(err) {
